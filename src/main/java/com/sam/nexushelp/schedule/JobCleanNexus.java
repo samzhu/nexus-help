@@ -55,7 +55,7 @@ public class JobCleanNexus {
             // 執行清除
             componentItems.forEach(componentItem -> {
                 sbMailMsg.append(componentItem.getName() + ", " + componentItem.getVersion() + "\r\n");
-//                nexusService.deleteComponent(componentItem.getId());
+                nexusService.deleteComponent(componentItem.getId());
             });
             sbMailMsg.append("\r\n");
             // 取出所有任務
